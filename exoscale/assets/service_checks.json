@@ -1,0 +1,20 @@
+[
+  {
+    "agent_version": "7.0.0",
+    "integration": "Exoscale",
+    "check": "exoscale.dbaas.disk_usage",
+    "statuses": ["ok", "warning", "critical", "unknown"],
+    "groups": [],
+    "name": "exoscale dbaas storage!",
+    "description": "Returns `CRITICAL` if usage is over 85%, `WARNING` if usage is over 75%, otherwise returns `OK`."
+  },
+  {
+    "agent_version": "7.0.0",
+    "integration": "Exoscale",
+    "check": "exoscale.can_connect",
+    "statuses": ["ok", "critical"],
+    "groups": [],
+    "name": "Can Connect",
+    "description": "Returns CRITICAL if the Agent cannot connect to Exoscale API to collect metrics, otherwise returns `OK`"
+  }
+]

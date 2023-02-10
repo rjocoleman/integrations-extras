@@ -1,0 +1,50 @@
+name: Exoscale
+files:
+- name: exoscale.yaml
+  options:
+  - template: init_config
+    options:
+    - template: init_config/default
+  - template: instances
+    options:
+    - name: region
+      required: true
+      description: |
+        The region of your Exoscale resources.
+      value:
+        type: string
+        example: ch-gva-2
+    - name: api_key
+      required: true
+      description: |
+        Your Exoscale API key with relevant access permissions (via IAM).
+      value:
+        type: string
+        example: EXO1234567890
+    - name: api_secret
+      required: true
+      description: |
+        Your Exoscale API secret.
+      value:
+        type: string
+        example: 1EXAMpleKey
+    - name: service_name
+      required: true
+      description: |
+        The DBaaS service name you wish to monitor.
+      value:
+        type: string
+        example: ch-gva-2
+    - name: period
+      description: |
+        Metrics time period.
+      value:
+        type: string
+        display_default: hour
+        examples:
+          - 'hour'
+          - 'week'
+          - 'month'
+          - 'year'
+          - 'day'
+    - template: instances/default

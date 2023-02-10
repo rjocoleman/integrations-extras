@@ -1,0 +1,9 @@
+metric_name,metric_type,interval,unit_name,per_unit_name,description,orientation,integration,short_name,curated_metric
+exoscale.dbaas.disk.usedPercent,gauge,,percent,,"Disk space usage %",0,exoscale,disk_used,
+exoscale.dbaas.load.average,gauge,,item,,"Load average (5 min)",0,exoscale,load_average,
+exoscale.dbaas.memory.usedPercent,gauge,,percent,,"Memory usage %",0,exoscale,memory_used,memory
+exoscale.dbaas.disk.writeIOsPS,gauge,,item,,"Disk iops (writes)",0,exoscale,diskio_write,
+exoscale.dbaas.cpuutilization,gauge,,item,,"CPU usage %",0,exoscale,cpu_usage,cpu
+exoscale.dbaas.disk.readIOsPS,gauge,,item,,"Disk iops (reads)",0,exoscale,diskio_read,
+exoscale.dbaas.network.wrBytesPS,gauge,,byte,,"Network transmit (bytes/s)",0,exoscale,net_send,
+exoscale.dbaas.network.rdBytesPS,gauge,,byte,,"Network receive (bytes/s)",0,exoscale,net_receive,
